@@ -25,7 +25,7 @@ module.exports = {
       res.send(songs)
     } catch (err) {
       res.status(500).send({
-        error: 'an error has occured trying to fetch the songs'
+        error: 'Ka errorr '
       })
     }
   },
@@ -35,7 +35,7 @@ module.exports = {
       res.send(song)
     } catch (err) {
       res.status(500).send({
-        error: 'an error has occured trying to show the songs'
+        error: 'Ka error me pa këtë këngë'
       })
     }
   },

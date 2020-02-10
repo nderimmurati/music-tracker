@@ -43,7 +43,7 @@ export default new Router({
     },
     {
       path: '*',
-      redirect: 'songs'
+      redirect: 'login'
     }
   ]
 })

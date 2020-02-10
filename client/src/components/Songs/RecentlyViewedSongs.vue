@@ -25,11 +25,11 @@ export default {
     return {
       headers: [
         {
-          text: 'Titulli',
+          text: 'Title',
           value: 'title'
         },
         {
-          text: 'Artisti',
+          text: 'Artist',
           value: 'artist'
         }
       ],

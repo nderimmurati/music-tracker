@@ -106,7 +106,7 @@ export default {
         .keys(this.song)
         .every(key => !!this.song[key])
       if (!areAllFieldsFilledIn) {
-        this.error = 'Please fill in all the required fields.'
+        this.error = 'Ju lutemi mbushini te gjitha fushat e kërkuara.'
         return
       }
 

@@ -1,4 +1,4 @@
-module.exports = (sequelize, _DataTypes) => {
+module.exports = (sequelize, DataTypes) => {
     const History = sequelize.define('History', {})
   
     History.associate = function (models) {

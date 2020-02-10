@@ -32,7 +32,7 @@ const {
         res.send(bookmarks)
       } catch (err) {
         res.status(500).send({
-          error: 'an error has occured trying to fetch the bookmark'
+          error: 'Ka errorr për të fetchuar  bookmarkun'
         })
       }
     },
@@ -48,7 +48,7 @@ const {
         })
         if (bookmark) {
           return res.status(400).send({
-            error: 'you already have this set as a bookmark'
+            error: 'Ju tani sapo e keni lën si bookmark'
           })
         }
         const newBookmark = await Bookmark.create({
@@ -59,7 +59,7 @@ const {
       } catch (err) {
         console.log(err)
         res.status(500).send({
-          error: 'an error has occured trying to create the bookmark'
+          error: 'Një error ka ndalur për të krijuar bookmarkun'
         })
       }
     },
@@ -75,14 +75,14 @@ const {
         })
         if (!bookmark) {
           return res.status(403).send({
-            error: 'you do not have access to this bookmark'
+            error: 'Ju nuk keni akses në këtëbokmark bookmark'
           })
         }
         await bookmark.destroy()
         res.send(bookmark)
       } catch (err) {
         res.status(500).send({
-          error: 'an error has occured trying to delete the bookmark'
+          error: 'Ka errorr për të fshirë këtë images to delete the bookmark'
         })
       }
     }
