@@ -3,35 +3,35 @@
     <v-flex xs4>
       <panel title="Song Metadata">
         <v-text-field
-          label="Titulli"
+          label="Title"
           required
           :rules="[required]"
           v-model="song.title"
         ></v-text-field>
 
         <v-text-field
-          label="Artisti"
+          label="Artist"
           required
           :rules="[required]"
           v-model="song.artist"
         ></v-text-field>
 
         <v-text-field
-          label="Zhanri"
+          label="Genre"
           required
           :rules="[required]"
           v-model="song.genre"
         ></v-text-field>
 
         <v-text-field
-          label="Albumi"
+          label="Album"
           required
           :rules="[required]"
           v-model="song.album"
         ></v-text-field>
 
         <v-text-field
-          label="Url e Fotos së Albumit"
+          label="Album Image Url"
           required
           :rules="[required]"
           v-model="song.albumImageUrl"
@@ -71,9 +71,9 @@
 
       <v-btn
         dark
-        class="blue"
+        class="cyan"
         @click="create">
-        Krijo Këng
+        Krijo Këngën
       </v-btn>
     </v-flex>
   </v-layout>
@@ -106,7 +106,7 @@ export default {
         .keys(this.song)
         .every(key => !!this.song[key])
       if (!areAllFieldsFilledIn) {
-        this.error = 'Ju lutemi mbushini te gjitha fushat e kërkuara.'
+        this.error = 'Ju lutemi mbushni të gjitha fushat oblikative.'
         return
       }
 

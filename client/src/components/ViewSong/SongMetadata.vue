@@ -39,7 +39,7 @@
           dark
           class="blue"
           @click="unsetAsBookmark">
-          Unset As Bookmark
+          Largo si Bookmark
         </v-btn>
       </v-flex>
 
